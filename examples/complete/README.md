@@ -1,4 +1,4 @@
-# Complete Aiven Integration Example
+# Complete Aiven Service Integration Example
 
 Configuration in this directory creates an Aiven Integration resources with following features:
 

@@ -1,3 +1,27 @@
+# Aiven Service Integration Endpoint Terraform module
+
+Terraform module which creates Aiven Service Integration Endpoint resources
+
+## Usage
+
+```hcl
+module "integration_endpoint" {
+  source                  = "tf-cloud-modules/service-integration/aiven//modules/integration_endpoint"
+  project                 = "test"
+  endpoint_name           = "aws_cloudwatch_metrics"
+  endpoint_type           = "external_aws_cloudwatch_metrics"
+  
+  external_aws_cloudwatch_metrics_user_config = [
+    {
+      access_key = "access_key"
+      namespace  = "namespace"
+      region     = "us-east-1"
+      secret_key = "secret_key"
+    }
+  ]
+}
+```
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 

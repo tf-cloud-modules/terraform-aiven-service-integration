@@ -1,4 +1,19 @@
-# terraform-aiven-service-integration
+# Aiven Service Integration Terraform module
+
+Terraform module which creates Aiven Service Integration resources
+
+## Usage
+
+```hcl
+module "integration" {
+  source                  = "tf-cloud-modules/service-integration/aiven"
+  project                 = "test"
+  integration_type        = "external_aws_cloudwatch_metrics"
+  destination_endpoint_id = "XXXXXXX"
+  source_service_name     = "test"
+}
+```
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
