@@ -31,7 +31,7 @@ No providers.
 |------|--------|---------|
 | <a name="module_integration"></a> [integration](#module\_integration) | ../.. | n/a |
 | <a name="module_integration_endpoint_external_aws_cloudwatch_metrics"></a> [integration\_endpoint\_external\_aws\_cloudwatch\_metrics](#module\_integration\_endpoint\_external\_aws\_cloudwatch\_metrics) | ../../modules/integration_endpoint | n/a |
-| <a name="module_redis"></a> [redis](#module\_redis) | tf-cloud-modules/redis/aiven | n/a |
+| <a name="module_redis"></a> [redis](#module\_redis) | tf-cloud-modules/redis/aiven | 1.0.4 |
 
 ## Resources
 
