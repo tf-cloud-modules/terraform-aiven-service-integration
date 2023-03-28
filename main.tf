@@ -86,11 +86,4 @@ resource "aiven_service_integration" "this" {
       }
     }
   }
-
-  dynamic "mirrormaker_user_config" {
-    for_each = var.mirrormaker_user_config
-    content {
-      mirrormaker_whitelist = lookup(mirrormaker_user_config.value, "mirrormaker_whitelist", null)
-    }
-  }
 }

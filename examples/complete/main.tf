@@ -15,7 +15,6 @@ module "integration_endpoint_external_aws_cloudwatch_metrics" {
 
 module "redis" {
   source       = "tf-cloud-modules/redis/aiven"
-  version      = "1.0.4"
   project      = "tf-cloud-modules"
   service_name = "test"
   tags = [

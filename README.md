@@ -20,7 +20,7 @@ module "integration" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13.1 |
-| <a name="requirement_aiven"></a> [aiven](#requirement\_aiven) | >= 3.0.0, < 4.0.0 |
+| <a name="requirement_aiven"></a> [aiven](#requirement\_aiven) | >= 4.0.0, < 5.0.0 |
 
 ## Providers
 
@@ -44,14 +44,13 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_create"></a> [create](#input\_create) | Controls if resources should be created. | `bool` | `true` | no |
 | <a name="input_destination_endpoint_id"></a> [destination\_endpoint\_id](#input\_destination\_endpoint\_id) | Destination endpoint for the integration. | `string` | n/a | yes |
-| <a name="input_destination_service_name"></a> [destination\_service\_name](#input\_destination\_service\_name) | Destination service for the integration. | `string` | `""` | no |
+| <a name="input_destination_service_name"></a> [destination\_service\_name](#input\_destination\_service\_name) | Destination service for the integration. | `string` | `null` | no |
 | <a name="input_integration_type"></a> [integration\_type](#input\_integration\_type) | Type of the service integration. | `string` | n/a | yes |
 | <a name="input_kafka_connect_user_config"></a> [kafka\_connect\_user\_config](#input\_kafka\_connect\_user\_config) | Kafka Connect specific user configurable settings. | `list(any)` | `[]` | no |
 | <a name="input_kafka_logs_user_config"></a> [kafka\_logs\_user\_config](#input\_kafka\_logs\_user\_config) | Kafka Logs specific user configurable settings. | `list(any)` | `[]` | no |
 | <a name="input_kafka_mirrormaker_user_config"></a> [kafka\_mirrormaker\_user\_config](#input\_kafka\_mirrormaker\_user\_config) | Mirrormaker 2 integration specific user configurable settings. | `list(any)` | `[]` | no |
 | <a name="input_logs_user_config"></a> [logs\_user\_config](#input\_logs\_user\_config) | Log integration specific user configurable settings. | `list(any)` | `[]` | no |
 | <a name="input_metrics_user_config"></a> [metrics\_user\_config](#input\_metrics\_user\_config) | Metrics specific user configurable settings. | `list(any)` | `[]` | no |
-| <a name="input_mirrormaker_user_config"></a> [mirrormaker\_user\_config](#input\_mirrormaker\_user\_config) | Mirrormaker 1 integration specific user configurable settings. | `list(any)` | `[]` | no |
 | <a name="input_project"></a> [project](#input\_project) | Aiven Cloud Project Name | `string` | n/a | yes |
 | <a name="input_source_service_name"></a> [source\_service\_name](#input\_source\_service\_name) | Source service for the integration. | `string` | n/a | yes |
 

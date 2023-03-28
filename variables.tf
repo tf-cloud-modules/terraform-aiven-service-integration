@@ -27,7 +27,7 @@ variable "source_service_name" {
 variable "destination_service_name" {
   description = "Destination service for the integration."
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "kafka_connect_user_config" {
@@ -56,12 +56,6 @@ variable "logs_user_config" {
 
 variable "metrics_user_config" {
   description = "Metrics specific user configurable settings."
-  type        = list(any)
-  default     = []
-}
-
-variable "mirrormaker_user_config" {
-  description = "Mirrormaker 1 integration specific user configurable settings."
   type        = list(any)
   default     = []
 }
