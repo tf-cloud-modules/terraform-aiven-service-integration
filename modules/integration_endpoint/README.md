@@ -26,15 +26,15 @@ module "integration_endpoint" {
 ## Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13.1 |
-| <a name="requirement_aiven"></a> [aiven](#requirement\_aiven) | >= 4.0.0, < 5.0.0 |
+| <a name="requirement_aiven"></a> [aiven](#requirement\_aiven) | >= 4.66.0, < 5.0.0 |
 
 ## Providers
 
 | Name | Version |
-|------|---------|
-| <a name="provider_aiven"></a> [aiven](#provider\_aiven) | >= 4.0.0, < 5.0.0 |
+| ---- | ------- |
+| <a name="provider_aiven"></a> [aiven](#provider\_aiven) | 4.66.0 |
 
 ## Modules
 
@@ -43,13 +43,13 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [aiven_service_integration_endpoint.this](https://registry.terraform.io/providers/aiven/aiven/latest/docs/resources/service_integration_endpoint) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_create"></a> [create](#input\_create) | Controls if resources should be created. | `bool` | `true` | no |
 | <a name="input_datadog_user_config"></a> [datadog\_user\_config](#input\_datadog\_user\_config) | Datadog specific user configurable settings. | `list(any)` | `[]` | no |
 | <a name="input_endpoint_name"></a> [endpoint\_name](#input\_endpoint\_name) | Name of the service integration endpoint. | `string` | n/a | yes |
@@ -64,12 +64,11 @@ No modules.
 | <a name="input_project"></a> [project](#input\_project) | Aiven Cloud Project Name. | `string` | n/a | yes |
 | <a name="input_prometheus_user_config"></a> [prometheus\_user\_config](#input\_prometheus\_user\_config) | Prometheus specific user configurable settings. | `list(any)` | `[]` | no |
 | <a name="input_rsyslog_user_config"></a> [rsyslog\_user\_config](#input\_rsyslog\_user\_config) | Rsyslog specific user configurable settings. | `list(any)` | `[]` | no |
-| <a name="input_signalfx_user_config"></a> [signalfx\_user\_config](#input\_signalfx\_user\_config) | Signalfx specific user configurable settings. | `list(any)` | `[]` | no |
 
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_id"></a> [id](#output\_id) | The ID of this resource. |
 | <a name="output_project"></a> [project](#output\_project) | Aiven Cloud Project Name. |
 <!-- END_TF_DOCS -->

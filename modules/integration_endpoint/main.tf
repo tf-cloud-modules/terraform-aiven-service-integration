@@ -120,12 +120,4 @@ resource "aiven_service_integration_endpoint" "this" {
     }
   }
 
-  dynamic "signalfx_user_config" {
-    for_each = var.signalfx_user_config
-    content {
-      enabled_metrics  = lookup(signalfx_user_config.value, "enabled_metrics", null)
-      signalfx_api_key = lookup(signalfx_user_config.value, "signalfx_api_key", null)
-      signalfx_realm   = lookup(signalfx_user_config.value, "signalfx_realm", null)
-    }
-  }
 }

@@ -78,9 +78,3 @@ variable "rsyslog_user_config" {
   type        = list(any)
   default     = []
 }
-
-variable "signalfx_user_config" {
-  description = "Signalfx specific user configurable settings."
-  type        = list(any)
-  default     = []
-}

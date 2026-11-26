@@ -1,6 +1,6 @@
 module "integration_endpoint_external_aws_cloudwatch_metrics" {
   source        = "../../modules/integration_endpoint"
-  project       = "tf-cloud-modules"
+  project       = var.project
   endpoint_name = "aws_cloudwatch_metrics"
   endpoint_type = "external_aws_cloudwatch_metrics"
   external_aws_cloudwatch_metrics_user_config = [
@@ -13,9 +13,11 @@ module "integration_endpoint_external_aws_cloudwatch_metrics" {
   ]
 }
 
-module "redis" {
-  source       = "tf-cloud-modules/redis/aiven"
-  project      = "tf-cloud-modules"
+module "mysql" {
+  source  = "tf-cloud-modules/mysql/aiven"
+  version = "2.1.0"
+
+  project      = var.project
   service_name = "test"
   tags = [
     {
@@ -27,8 +29,8 @@ module "redis" {
 
 module "integration" {
   source                  = "../.."
-  project                 = "tf-cloud-modules"
+  project                 = var.project
   integration_type        = "external_aws_cloudwatch_metrics"
   destination_endpoint_id = module.integration_endpoint_external_aws_cloudwatch_metrics.id
-  source_service_name     = module.redis.service_name
+  source_service_name     = module.mysql.service_name
 }
