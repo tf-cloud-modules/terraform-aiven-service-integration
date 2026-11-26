@@ -12,8 +12,8 @@ To run this example you need to execute:
 
 ```bash
 $ terraform init
-$ terraform plan
-$ terraform apply
+$ terraform plan -var="project=<aiven-project-name>"
+$ terraform apply -var="project=<aiven-project-name>"
 ```
 
 <!-- BEGIN_TF_DOCS -->
@@ -42,7 +42,9 @@ No resources.
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+| ---- | ----------- | ---- | ------- | :------: |
+| <a name="input_project"></a> [project](#input\_project) | Aiven Cloud Project Name. | `string` | n/a | yes |
 
 ## Outputs
 
