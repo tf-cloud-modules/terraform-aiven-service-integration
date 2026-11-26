@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Pin the aiven/aiven provider to exactly `4.66.0` in the root module, submodule, and complete example.
+
 ## [3.0.0] - 2026-11-26
 
 ### Changed

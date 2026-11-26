@@ -22,7 +22,7 @@ $ terraform apply -var="project=<aiven-project-name>"
 | Name | Version |
 | ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13.1 |
-| <a name="requirement_aiven"></a> [aiven](#requirement\_aiven) | >= 4.66.0, < 5.0.0 |
+| <a name="requirement_aiven"></a> [aiven](#requirement\_aiven) | = 4.66.0 |
 
 ## Providers
 
