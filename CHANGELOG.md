@@ -7,10 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.0.0] - 2026-11-26
+
 ### Changed
 
-- Raise the aiven/aiven provider constraint to `>= 4.66.0, < 5.0.0`.
-- **Breaking:** Remove the unsupported `signalfx_user_config` endpoint configuration.
+- **Breaking:** Require aiven/aiven provider `>= 4.66.0, < 5.0.0` and remove the unsupported `signalfx_user_config` endpoint configuration.
 
 ## [2.0.0] - 2023-03-28
 
@@ -28,7 +29,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release.
 
-[Unreleased]: https://github.com/tf-cloud-modules/terraform-aiven-service-integration/compare/2.0.0...HEAD
+[Unreleased]: https://github.com/tf-cloud-modules/terraform-aiven-service-integration/compare/3.0.0...HEAD
+[3.0.0]: https://github.com/tf-cloud-modules/terraform-aiven-service-integration/compare/2.0.0...3.0.0
 [2.0.0]: https://github.com/tf-cloud-modules/terraform-aiven-service-integration/compare/1.0.1...2.0.0
 [1.0.1]: https://github.com/tf-cloud-modules/terraform-aiven-service-integration/compare/1.0.0...1.0.1
 [0.1.0]: https://github.com/tf-cloud-modules/terraform-aiven-service-integration/releases/tag/0.1.0
